@@ -1,0 +1,100 @@
+* {
+  font-family: 'Play', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  background-image: linear-gradient(to right, #506b2a,#81a93d);
+} */
+
+/* section {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+} */
+
+p {
+  color: black;
+}
+
+.carpyzBackground {
+  background: linear-gradient(to right, #506b2a,#81a93d);
+}
+
+.textCarpyzBackground {
+  background: linear-gradient(to right, #506b2a,#81a93d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.dark-background {
+  background: #2d2c3b;
+}
+
+.divTransition {
+  background: linear-gradient(to right, #506b2a,#81a93d);
+  min-height: .6rem;
+}
+
+#accueil {
+  background: url('../images/THRE/THRE_06-bis.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+#produits {
+  background: url('../images/daniel-olah-CEYLvXttPkA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.is-slightly-rounded {
+  border-radius: 2%;
+}
+
+.left-image {
+  float: left;
+  padding: 0 20px 20px 5px;
+}
+
+#scrollBackBtn {
+  display: none;
+  position: fixed;
+  bottom: 15%;
+  right: 10%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: hsl(48, 100%, 67%);
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.logoMicro {
+  transform: scale(0,0);
+}
+
+.logoMacro {
+  transition-duration: 3s;
+  -moz-transition: scale(1,1) 3s ease-in-out;
+  -webkit-transition: scale(1,1) 3s ease-in-out;
+  -o-transition: scale(1,1) 3s ease-in-out;
+}
+
+.navHover {
+  text-decoration: underline solid 4px #81a93d;
+}
+
+#navTabs {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  z-index: 999;
+}

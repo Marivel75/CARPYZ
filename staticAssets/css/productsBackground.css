@@ -1,0 +1,21 @@
+.module {
+  background: url('RoueTHRE_transparent.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+/* .module::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('RoueTHRE_transparent.jpg');
+  background-size: cover;
+  filter: grayscale(100%);
+} */
+.module-inside {
+  position: relative;
+  font: bold 42px sans-serif;
+}

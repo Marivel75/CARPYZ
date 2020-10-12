@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carpyz</title>
+
+
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="staticAssets/css/main.css">
+    <link rel="stylesheet" href="staticAssets/css/slideIn.css">
+    <link rel="stylesheet" href="staticAssets/css/productsCards.css">
+
+    <!-- Font Awesome icons -->
+    <link href="staticAssets/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script defer src="staticAssets/js/all.js"></script> <!--load all styles -->
+
+    <!-- Google Font Play -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <button onclick="topFunction();" onmouseover="noOpacity();" onmouseout="oppacity();" id="scrollBackBtn" title="Go to top">
+      <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>Top
+    </button>
+
+    <nav class="navbar is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#accueil" class="navbar-item">
+            <img src="staticAssets/images/carpyz_symbole-2.png" alt="Logo" class="whiteLogo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div id="navBarMenuItems" class="navbar-start is-hidden-tablet is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
+            <a id="accueilLinkNavbar" href="#accueil" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+              Accueil
+            </a>
+            <a id="produitsLinkNavbar" href="#produits" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+              Produits
+            </a>
+            <a id="historiqueLinkNavbar" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+              Historique
+            </a>
+            <a id="aProposLinkNavbar" href="#aPropos" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+              À propos
+            </a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <img src="staticAssets/images/france-flag-round-icon-128.png" alt="">
+            </div>
+            <div class="navbar-item">
+              <a href="index-english.html" class="">
+                <img src="staticAssets/images/united-kingdom-flag-round-icon-16.png" alt="">
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a href="#contact" class="button is-warning">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </body>

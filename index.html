@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carpyz</title>
+
+
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="staticAssets/css/main.css">
+    <link rel="stylesheet" href="staticAssets/css/slideIn.css">
+    <link rel="stylesheet" href="staticAssets/css/productsCards.css">
+    <link rel="stylesheet" href="staticAssets/css/modal.css">
+      <link rel="stylesheet" href="staticAssets/css/loader.css">
+
+    <!-- Font Awesome icons -->
+    <link href="staticAssets/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script defer src="staticAssets/js/all.js"></script> <!--load all styles -->
+
+    <!-- Google Font Play -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+
+  <body onload="loaderFunction()" style="margin: 0;">
+
+    <div id="loader"></div>
+
+    <div id="carpyzContent" style="display: none;" class="animate-bottom">
+      <button onclick="topFunction();" onmouseover="noOpacity();" onmouseout="oppacity();" id="scrollBackBtn" title="Go to top">
+        <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>Top
+      </button>
+
+      <nav class="navbar is-fixed-top">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="#accueil" class="navbar-item">
+              <img src="staticAssets/images/carpyz_symbole-2.png" alt="Logo" class="">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div id="navBarMenuItems" class="navbar-start is-hidden-tablet is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
+              <a id="accueilLinkNavbar" href="#accueil" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+                Accueil
+              </a>
+              <a id="produitsLinkNavbar" href="#produits" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+                Produits
+              </a>
+              <a id="historiqueLinkNavbar" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+                Historique
+              </a>
+              <a id="aProposLinkNavbar" href="#aPropos" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+                À propos
+              </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <img src="staticAssets/images/france-flag-round-icon-128.png" alt="">
+              </div>
+              <div class="navbar-item">
+                <a href="index-english.html" class="">
+                  <img src="staticAssets/images/united-kingdom-flag-round-icon-16.png" alt="">
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a href="#contact" class="button dark-background has-text-white">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container is-fluid carpyzBackground divTransition">
+      </div>
+
+      <section id="accueil" class="hero is-medium">
+
+          <div class="hero-body">
+            <div class="tabs is-centered is-hidden-mobile">
+              <ul class="has-text-weight-bold is-size-4">
+                <li><a id="accueilLink" href="#accueil" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Accueil</a></li>
+                <li><a id="produitsLink" href="#produits" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Produits</a></li>
+                <li><a id="historiqueLink" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Historique</a></li>
+                <li><a id="aProposLink" href="#aPropos" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">À propos</a></li>
+              </ul>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-half is-full-mobile">
+                <figure class="image">
+                  <img id="logoCarpyz" class="logoMicro" src="staticAssets/images/LOGO.png" alt="Carpyz Logo">
+                </figure>
+                <br><br>
+              </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+              <div class="column is-three-quarters is-full-mobile">
+                <h2 class="title is-3 has-text-black has-text-centered">
+                  Produits de formes complexes pour la mécanique des fluides
+                </h2>
+              </div>
+            </div>
+
+            <br><br>
+            <div class="container has-text-centered">
+              <a href="#produits" class="button is-warning is-outlined is-large has-text-weight-bold has-text-black">
+                <span class="is-size-6">Découvrir</span><span class="icon"><i class="fas fa-chevron-down"></i></span>
+              </a>
+            </div>
+            <br>
+          </div>
+
+      </section>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <section id="produits" class="section">
+
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths-widescreen is-three-fifths-fullhd is-three-fifths-desktop is-three-fifths-tablet">
+
+            <div class="site-wrap">
+              <div class="columns is-vcentered">
+                <div class="column is-narrow" style="border-right: solid black;">
+                  <h2 class="title is-2 has-text-centered"><span class="has-text-danger">P</span><span class="has-text-black">RODUITS</span></h2>
+                </div>
+                <div class="column is-narrow">
+
+                </div>
+                <div class="column">
+                  <p class="has-text-black">Nos recherches nous ont permis de conceptualiser des produits aux implications dans les domaines suivants : la propulsion, la génération de puissance hydrolienne ou éolienne, et la production de nouvelles pièces industrielles. </p>
+                </div>
+              </div>
+              <br>
+            </div>
+
+
+            <div class="columns">
+
+              <div class="column">
+                <div id="RoueTHRE" class="card is-shadowless focus" onmouseover="openModal(id); shadow(id);" onmouseout="noShadow(id);">
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img src="staticAssets/images/THRE/THRE_06_ter.jpg" alt="Placeholder image" class="">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-centered">
+                      <h3 class="has-text-centered title is-4">
+                        <span class="has-text-danger has-text-weight-bold">R</span><span class="has-text-black has-text-weight-bold">oue THRE</span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div id="modalRoueTHRE" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <h3 class="modal-card-title has-text-centered title is-3">
+                      <span class="has-text-danger has-text-weight-bold">R</span><span class="has-text-black has-text-weight-bold">oue THRE</span>
+                    </h3>
+                    <button id="btnCloseModal" class="delete" aria-label="close" onclick="closeModal('modalRoueTHRE');"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+
+                    <div class="container">
+                      <p>La roue CARPYZ THRE unit pour la première fois au monde, dans une même roue, un <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbo</span>, une <span class="has-text-danger has-text-weight-bold">H</span><span class="has-text-black has-text-weight-bold">élice</span> et un <span class="has-text-danger has-text-weight-bold">R</span><span class="has-text-black has-text-weight-bold">éacteur circulaire</span>, qui peut-être alimenté avec des fluides Énergétiques: Air comprimé, Propane, Kérosène, Hydrogène...</p>
+                      <br>
+                    </div>
+
+                    <div class="columns is-mobile is-vcentered">
+
+                      <!-- <div class="column is-narrow">
+                        <button id="nextTHRE" class="button is-text is-pulled-left" type="button" name="button" style="z-index: 1;" onclick="swapPreviousTHRE();">
+                          <i class="fas fa-chevron-left fa-3x"></i>
+                        </button>
+                      </div> -->
+
+                      <!-- <div class="column">
+                        <figure class="image is-square">
+                          <img id="imgTHRE" src="staticAssets/images/THRE/THRE_00.jpg" alt="Placeholder image" class="fade-in">
+                          <figcaption>Roue THRE</figcaption>
+                        </figure>
+                      </div> -->
+                      <div class="column is-narrow">
+                        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+                        <button id="nextTHRE" class="button is-text is-pulled-left" type="button" name="button" style="z-index: 1;" onclick="plusSlides(-1)">
+                          <i class="fas fa-chevron-left fa-3x"></i>
+                        </button>
+                      </div>
+                      <div class="column">
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_00.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_01.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_02.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_03.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_04.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_05.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_06.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_07.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_08.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_09.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_010.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_011.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_012.jpg">
+                          </div>
+
+                          <div class="mySlides">
+                            <img src="staticAssets/images/THRE/THRE_06_ter.jpg">
+                          </div>
+                      </div>
+
+                      <div class="column is-narrow">
+                        <button id="nextTHRE" class="button is-text is-pulled-right" type="button" name="button" onclick="plusSlides(1)">
+                          <span class="icon"><i class="fas fa-chevron-right fa-3x"></i></span>
+                        </button>
+                          <!-- <a class="next" onclick="plusSlides(1)">❯</a> -->
+                      </div>
+
+
+                      <!-- <div class="column is-narrow">
+                        <button id="nextTHRE" class="button is-text is-pulled-right" type="button" name="button" style="z-index: 1;" onclick="swapNextTHRE();">
+                          <span class="icon"><i class="fas fa-chevron-right fa-3x"></i></span>
+                        </button>
+                      </div> -->
+
+                    </div>
+                    <div class="container has-text-centered">
+                      <a href="products/THRE_SlideShow.html">
+                        <span class"icon"><i class="fas fa-camera-retro fa-2x"></i></span>
+                        <span class="icon"><i class="fas fa-plus fa-lg"></i></span>
+                      </a>
+                    </div>
+
+                    <br>
+                    <div class="container">
+                      <p>La <span class="has-text-black has-text-weight-bold">roue T.H.R.E CARPYZ</span> aspire l'air à l'avant au centre de la roue, au milieu à l'entrée des pales de l'hélice, et le conduit au travers les pales qui sont creuses de bout en bout jusqu'à une chambre périphérique qui entoure la roue, et qui en tournant le refoule vers l'arrière de la roue par une fente circulaire.</p>
+                      <br>
+                      <p>L'air est projeté sur les couches limites situées à proximité tout autour de la roue et par réaction produit une poussée axiale importante tout autour de la roue additionnée à celle de l'hélice qui subsiste. Un fluide énergétique conduit depuis le centre de la roue jusqu'en périphérie peut amplifier la poussée axiale.</p>
+                      <br>
+                      <h3 class="title is-3 has-text-weight-bold has-text-centered"><span class="has-text-danger has-text-weight-bold">A</span><span class="has-text-black has-text-weight-bold">PPLICATIONS</span></h3>
+                      <p>Par exemple : si l'on place <span class="has-text-black has-text-weight-bold">4 roues T.H.R.E CARPYZ</span> d'un mètre de diamètre aux 4 coins d'une cabine comme les drones, il est alors possible de soulever jusqu'à 3 tonnes et de faire décoller votre véhicule verticalement. Ensuite en basculant les roues THRA à l'horizontale et en déployant des ailes comme les papillons sur les cotés de la cabine, il est possible de faire voyager votre véhicule comme un avion avec des  hélices. De plus les ailes peuvent être photovoltaïques.</p>
+                    </div>
+
+                  </section>
+                  <footer class="modal-card-foot carpyzBackground">
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column">
+                <div id="Turbine" class="card is-shadowless focus" onmouseover="openModal(id); shadow(id);" onmouseout="noShadow(id);">
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img src="staticAssets/images/Turbine/EOL_00.jpg" alt="Placeholder image" class="">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-centered">
+                      <h3 class="has-text-centered title is-4">
+                        <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbine</span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modalTurbine" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <h3 class="modal-card-title has-text-centered title is-3">
+                      <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbine Carpyz</span>
+                    </h3>
+                    <button id="btnCloseModal" class="delete" aria-label="close" onclick="closeModal('modalTurbine');"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                    <div class="container">
+                      <p>La <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbine Carpyz</span> s'inspire du principe des turbines Pelton. Ici le fluide entre comme dans les manches à vent dans un conduit fixe maintenant pourvu de canaux, qui le dirigent vers l’arrière en le faisant tourner tout autour de l'axe de la turbine. Le fluide frappe ensuite des godets placés successivement les uns après les autres autour d’une roue qu’ils font tourner.</p>
+                      <br>
+                    </div>
+
+                    <div class="columns is-mobile is-vcentered">
+                      <div class="column is-narrow">
+                        <button id="nextTurbine" class="button is-text is-pulled-left" type="button" name="button" onclick="swapPreviousTurbine();">
+                          <i class="fas fa-chevron-left fa-3x"></i>
+                        </button>
+                      </div>
+
+                      <div class="column">
+                        <figure class="image is-square">
+                          <img id="imgTurbine" src="staticAssets/images/Turbine/EOL_00.jpg" alt="Placeholder image" class="fade-in">
+                          <figcaption>Roue THRE</figcaption>
+                        </figure>
+                      </div>
+
+                      <div class="column is-narrow">
+                        <button id="nextTurbine" class="button is-text is-pulled-right" type="button" name="button" onclick="swapNextTurbine();">
+                          <span class="icon"><i class="fas fa-chevron-right fa-3x"></i></span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                    <br>
+                    <h3 class="title is-3 has-text-weight-bold has-text-centered"><span class="has-text-danger has-text-weight-bold">A</span><span class="has-text-black has-text-weight-bold">PPLICATIONS</span></h3>
+                    <p>Entre autre la <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbine Carpyz</span> peut être utilisée comme générateurs de puissance, hydroliennes ou éoliennes :</p>
+                    <br>
+                    <p>Dans ce dernier cas la totalité de la veine du vent est utilisée ce qui permet des rendements élevés et donc des puissances importantes avec de faibles encombrements.</p>
+                    <br>
+                    <p>La construction ‘’nid d’abeilles’’ très solide permet de résister à des vents violents et donc permet, contrairement à certaines éoliennes actuelles, de récupérer de l’énergie quand il y en a beaucoup et quand on en a le plus besoin.</p>
+                    <p>L'ensemble peut être entouré d’une jupe qui s’évase vers  l’arrière ce qui augmente le différentiel de pression entre l’avant et l’arrière et améliore encore l’efficacité ainsi que  le rendement. </p>
+                    <br>
+                    <p>Les <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbines Carpyz</span> démarrent avec des vents très faibles.       A puissances équivalentes, du fait de leurs plus faibles dimensions, ces turbines permettent aussi de placer à leur entrée une protection pour les animaux et ainsi respecter l'environnement.</p>
+                    <br>
+                    <p>La <span class="has-text-danger has-text-weight-bold">T</span><span class="has-text-black has-text-weight-bold">urbine Carpyz</span> peut être utilisée avec de la vapeur d'eau comme générateur d'énergie, dans les centrales à combustibles fossiles ou nucléaires.</p>
+                    <br>
+                  </section>
+                  <footer class="modal-card-foot carpyzBackground">
+                  </footer>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="columns is-mobile is-centered">
+          <div class="column is-three-fifths-widescreen is-three-fifths-fullhd is-three-fifths-desktop is-three-fifths-tablet">
+
+            <div class="columns">
+              <div class="column">
+                <div id="Propulseurs" class="card is-shadowless focus" onmouseover="openModal(id); shadow(id);" onmouseout="noShadow(id);">
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img src="staticAssets/images/propulseurs.jpg" alt="Placeholder image" class="">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-centered">
+                      <h3 class="has-text-centered title is-4">
+                        <span class="has-text-danger has-text-weight-bold">P</span><span class="has-text-black has-text-weight-bold">ropulseurs</span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modalPropulseurs" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <h3 class="modal-card-title has-text-centered title is-3">
+                      <span class="has-text-danger has-text-weight-bold">P</span><span class="has-text-black has-text-weight-bold">ropulseurs</span>
+                    </h3>
+                    <button id="btnCloseModal" class="delete" aria-label="close" onclick="closeModal('modalPropulseurs');"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                    <figure class="image is-128x128 left-image">
+                      <img src="staticAssets/images/propulseurs.jpg" alt="Placeholder image">
+                    </figure>
+                    <p>Les <span class="has-text-danger has-text-weight-bold">P</span><span class="has-text-black has-text-weight-bold">ropulseurs CARPYZ</span> emploient d'abord une <span class="has-text-danger has-text-weight-bold">R</span><span class="has-text-black has-text-weight-bold">oue THRE</span> (Turbo Hélico Réacteur Énergétique) entrainée par un moteur électrique et dont le turbo refoule l'air à sa périphérie à l'arrière. Il continue dans une chambre circulaire fixe pourvu d'entretoises spiroïdales qui confirment sa rotation. </p>
+                    <br>
+                    <p>L'air poursuit sa trajectoire dans une deuxième chambre fixe alimentée avec un fluide énergétique qui devient alors chambre de combustion. Un nouvelle chambre fixe pourvu d'entretoises spiroïdales fait tourner la torche de feu. Elle pousse alors les godets d'une roue posée sur le grand diamètre d'une autre hélice qui vient ajouter son flux à la chambre située à l'entrée du propulseur.</p>
+                    <br>
+                    <p>Le centre des pales de l'hélice de la roue à godets est montée sur un arbre qui entraine un générateur électrique. Cet arbre peut être solidarisé en rotation à la demande avec l'arbre du moteur de la <span class="has-text-danger has-text-weight-bold">R</span><span class="has-text-black has-text-weight-bold">oue THRE</span>.</p>
+                  </section>
+                  <footer class="modal-card-foot carpyzBackground">
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column">
+                <div id="Machine3D" class="card is-shadowless focus" onmouseover="openModal(id); shadow(id);" onmouseout="noShadow(id);">
+                  <div class="card-image">
+                    <figure class="image is-square">
+                      <img src="staticAssets/images/machine3D.jpg" alt="Placeholder image" class="">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-centered">
+                      <h3 class="has-text-centered title is-4">
+                        <span class="has-text-danger has-text-weight-bold">M</span><span class="has-text-black has-text-weight-bold">achine 3D</span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modalMachine3D" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <h3 class="modal-card-title has-text-centered title is-3">
+                      <span class="has-text-danger has-text-weight-bold">M</span><span class="has-text-black has-text-weight-bold">achine 3D</span>
+                    </h3>
+                    <button id="btnCloseModal" class="delete" aria-label="close" onclick="closeModal('modalMachine3D');"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <!-- Content ... -->
+                    <figure class="image is-128x128 left-image">
+                      <img src="staticAssets/images/machine3D.jpg" alt="Placeholder image">
+                    </figure>
+                    <p>Les nouvelles machines circulaires industrielles additives <span class="has-text-danger has-text-weight-bold">C</span><span class="has-text-black has-text-weight-bold">arpyz</span> très innovantes, permettent la fabrication en 3D beaucoup plus rapide de pièces industrielles rondes de tous diamètres, par solidification de matière couche par couche.</p>
+                    <br>
+                    <p>Ces machines sont pourvues de plusieurs postes successifs sur la surface du cercle qui permettent d’une part de contrôler en continu la température et la qualité des produits sur chaque couche et d'autre part il est aussi possible de faire des couches de produits différents.</p>
+                    <br>
+                    <p>Ces nouvelles machines circulaires <span class="has-text-danger has-text-weight-bold">C</span><span class="has-text-black has-text-weight-bold">arpyz</span> vont permettre d’obtenir des réductions importantes des temps de fabrication, du fait que plusieurs postes peuvent travailler simultanément et permettront donc d'obtenir d'importantes diminutions des prix  des pièces produites, qui de plus ne sont pas  limitées en dimensions, contrairement aux machines de frittage de poudre par  laser existantes acruellement.</p>
+                    <br>
+                    <p>Ces <span class="has-text-danger has-text-weight-bold">M</span><span class="has-text-black has-text-weight-bold">achine 3D</span> <span class="has-text-danger has-text-weight-bold">C</span><span class="has-text-black has-text-weight-bold">arpyz</span> vont connaitre un important développement au niveau mondial, car de nouveaux produits circulaires monoblocs de formes complexes, inconstructibles auparavant, vont voir le jour et concernent beaucoup d'applications industrielles, de design ou autres. . .</p>
+                    <br>
+                    <p>Par exemple les fans (grandes hélices à l'entrée des moteurs d'avion) pourront être construit d'un seul tenant.</p>
+                    <br>
+                  </section>
+                  <footer class="modal-card-foot carpyzBackground">
+                  </footer>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <div class="container is-fluid" style="background:url('staticAssets/images/cristian-palmer-RR29P0uLQms-unsplash.jpg'); background-size: cover; background-position: center; height: 150px;">
+      </div>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <section id="aPropos" class="section has-background-white">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-four-fifths-widescreen is-four-fifths-fullhd is-four-fifths-desktop is-four-fifths-tablet">
+            <h2 class="title is-2 has-text-black has-text-centered"><span class="has-text-danger">À</span><span> PROPOS</span></h2>
+            <hr>
+            <div class="columns">
+              <div class="column">
+                <p class="has-text-centered has-text-black"><i class="fas fa-fan fa-2x"></i></i></p>
+                <br>
+                <p class="has-text-centered has-text-weight-bold is-size-4 textCarpyzBackground">Ingénierie & Études</p>
+                <br>
+                <p class="has-text-centered">Tester le fonctionnement de nos produits dans des environnements au plus près de la réalité.</p>
+              </div>
+              <div class="column">
+                <p class="has-text-centered has-text-black"><i class="fas fa-divide fa-2x"></i></p>
+                <br>
+                <p class="has-text-centered has-text-weight-bold is-size-4 textCarpyzBackground">Recherche & Développement</p>
+                <br>
+                <p class="has-text-centered">Etudes et recherches pour stimuler l'innovation dans nos domaines d'expertise.</p>
+              </div>
+              <div class="column">
+                <p class="has-text-centered has-text-black"><i class="fas fa-file fa-2x"></i></p>
+                <br>
+                <p class="has-text-centered has-text-weight-bold is-size-4 textCarpyzBackground">Conception de méthodologies</p>
+                <br>
+                <p class="has-text-centered">Mise au point de procédés adaptés aux applications complexes.</p>
+              </div>
+            </div>
+            <br>
+            <br>
+            <h3 class="title is-4 textCarpyzBackground has-text-centered">Notre engagement dans la recherche</h3>
+            <p class="has-text-centered is-size-5">Carpyz est membre du pôle de compétitivité ASTech Paris Région</p>
+            <a href="https://www.pole-astech.org/web/site/index.php" target="_blank">
+              <img src="staticAssets/images/AsTechParisRegion.png" alt="AsTech Photo">
+            </a>
+            <p>Situé en Île-de-France (premier bassin d’emplois en France dans le domaine de l’Aéronautique, de l’Espace et des systèmes embarqués), le Pôle de Compétitivité aérospatial ASTech Paris Région, rassemble plus de 100 000 personnes.</p>
+            <p>Il a pour objectif d'accroître les positions de leader européen de l'industrie des secteurs Lancement spatial, Aviation d’affaires, Propulsion et Equipements par l’innovation.</p>
+
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <div class="container is-fluid" style="background:url('staticAssets/images/owen-kemp-I8BaNbAd9os-unsplash.jpg'); background-size: cover; background-position: bottom; height: 150px;">
+      </div>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <section id="historique" class="section dark-background ">
+
+
+        <div class="columns is-mobile is-centered">
+          <div class="column is-four-quarters-widescreen is-four-fifths-fullhd is-full-desktop is-full-mobile">
+
+            <div class="site-wrap">
+              <h2 class="title is-2 has-text-black has-text-centered"><span class="has-text-danger">H</span><span>ISTORIQUE</span></h2>
+              <hr>
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <img src="staticAssets/images/plates-formes-calcul.png" class="align-left slide-in">
+                </div>
+                <div class="column">
+                  <p class="has-text-black">La recherche a commencé il y a plus de soixante ans. Petit à petit, des prototypes ont été conçus et testés.</p>
+                </div>
+              </div>
+              <br>
+
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <p class="has-text-black">Les premiers prototypes sont fabriqués par enlèvement de copeaux en cherchant à améliorer les produits existants.</p>
+                </div>
+                <div class="column">
+                  <img src="staticAssets/images/enlevement-de-copeaux.jpg" class="align-right slide-in">
+                </div>
+              </div>
+              <br>
+
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <p class="has-text-black">Par la suite, les recherches ont évolué vers la création et la construction de nouveaux produits.</p>
+                </div>
+                <div class="column">
+                    <img src="staticAssets/images/mfe5-305x123.jpg" class="image is-256x256 align-left slide-in">
+                </div>
+              </div>
+              <br>
+
+              <div class="columns is-vcentered">
+                <div class="column">
+                  <div class="column">
+                    <img src="staticAssets/images/THRE/THRE_01.jpg" class="align-right slide-in" style="width: 300px; height: 300px;">
+                  </div>
+                  <p class="has-text-black">Les outils informatiques <span class="has-text-weight-bold">CARPYZ</span> offre de nouvelles possibilités pour concevoir, fabriquer et développer de nouveaux produits en mécanique des fluides.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <div id="contact" class="container is-fluid" style="background: URL('staticAssets/images/pexels-fauxels-3183197.jpg'); background-position: center; height: 300px;"></div>
+
+      <div class="container is-fluid divTransition">
+      </div>
+
+      <footer class="footer dark-background">
+        <div class="columns is-mobile is-centered">
+          <div class="column is-half-widescreen is-half-fullhd is-half-desktop is-three-quarters-mobile">
+            <div class="content has-text-centered">
+              <h2 class="title is-2 has-text-black has-text-centered"><span class="has-text-danger">C</span><span class="has-text-white">ONTACT</span></h2>
+              <p class="has-text-white has-text-centered">Nous sommes toujours à la recherche de nouvelles collaboration et de partenaires.Vous avez un potentiel industriel et financier suffisant, qui vous permet d'envisager la construction et la diffusion de ces produits. N'hésitez pas à prendre contact avec nous.</p>
+              <br>
+              <p class="is-size-3 has-text-weight-bold has-text-white">Carpyz</p>
+              <address class="">
+                <p class="is-size-6 has-text-weight-bold has-text-white">71, rue Desnouettes</p>
+                <p class="is-size-6 has-text-weight-bold has-text-white">75015 Paris</p>
+                <p class="is-size-6 has-text-weight-bold has-text-white">France</p>
+                <p class="has-text-centered"><a href="mailto:pc.carpyz@yahoo.fr" target="_blank" class="is-size-4 textCarpyzBackground has-text-weight-bold">pc.carpyz@yahoo.fr</a></p>
+              </address>
+            </div>
+
+          </div>
+        </div>
+
+                <br><br>
+                <p class="has-text-white is-size-7 is-pulled-right">© Website by Roc Avel Développement, 2020</p>
+      </footer>
+
+    </div>
+
+
+    <!-- JS custom -->
+    <script type="text/javascript" src="staticAssets/js/main.js"></script>
+    <script type="text/javascript" src="staticAssets/js/slideIn.js"></script>
+    <script type="text/javascript" src="staticAssets/js/productsCards.js"></script>
+    <script type="text/javascript" src="staticAssets/js/modalTHRE.js"></script>
+    <script type="text/javascript" src="staticAssets/js/modalTurbine.js"></script>
+        <script type="text/javascript" src="staticAssets/js/loader.js"></script>
+
+
+  </body>
+</html>

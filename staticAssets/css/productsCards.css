@@ -1,0 +1,19 @@
+.card-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #506b2a,#81a93d);
+  padding: 3px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.focus {
+  transition: transform .2s;
+}
+.focus:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.1);
+  z-index: 29;
+}
