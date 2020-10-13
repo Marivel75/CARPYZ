@@ -41,7 +41,7 @@ p {
   background: url('../images/THRE/THRE_06-bis.jpg');
   background-size: cover;
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 
 #produits {
