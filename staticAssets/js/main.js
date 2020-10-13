@@ -1,5 +1,5 @@
 // Load logo zoom effect
-window.addEventListener("load", zoomLogo);
+// window.addEventListener("load", zoomLogo);
 
 // Toggle burger-menu on mobile
 document.addEventListener('DOMContentLoaded', () => {
