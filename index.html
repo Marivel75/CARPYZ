@@ -59,11 +59,11 @@
               <a id="produitsLinkNavbar" href="#produits" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
                 Produits
               </a>
-              <a id="historiqueLinkNavbar" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
-                Historique
-              </a>
               <a id="aProposLinkNavbar" href="#aPropos" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
                 À propos
+              </a>
+              <a id="historiqueLinkNavbar" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">
+                Historique
               </a>
             </div>
             <div class="navbar-end">
@@ -95,8 +95,8 @@
               <ul class="has-text-weight-bold is-size-4">
                 <li><a id="accueilLink" href="#accueil" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Accueil</a></li>
                 <li><a id="produitsLink" href="#produits" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Produits</a></li>
-                <li><a id="historiqueLink" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Historique</a></li>
                 <li><a id="aProposLink" href="#aPropos" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">À propos</a></li>
+                <li><a id="historiqueLink" href="#historique" class="navbar-item has-text-black" onmouseover="activeLink(id);" onmouseout="inactiveLink(id)">Historique</a></li>
               </ul>
             </div>
             <div class="columns is-centered">
@@ -136,7 +136,7 @@
 
             <div class="site-wrap">
               <h2 class="title is-2 has-text-centered"><span class="has-text-danger">P</span><span class="has-text-black">RODUITS</span></h2>
-              <p class="has-text-black">Nos recherches nous ont permis de conceptualiser des produits aux implications dans les domaines suivants : la propulsion, la génération de puissance hydrolienne ou éolienne, et la production de nouvelles pièces industrielles. </p>
+              <p class="has-text-black">Nos recherches nous ont permis de conceptualiser des produits aux implications dans les domaines suivants : la propulsion, la génération de puissance hydrolienne ou éolienne, et la production de nouvelles pièces industrielles.</p>
               <br>
             </div>
 
@@ -177,6 +177,7 @@
                       <br>
                     </div>
 
+                    <!-- slideshow -->
                     <div class="columns is-mobile is-vcentered">
 
                       <div class="column is-narrow">
@@ -249,7 +250,6 @@
 
                       </div>
 
-
                     </div>
 
                     <br>
@@ -272,7 +272,7 @@
                 <div id="Turbine" class="card is-shadowless focus" onclick="openModal(id);" onmouseover="shadow(id);" onmouseout="noShadow(id);">
                   <div class="card-image">
                     <figure class="image is-square">
-                      <img src="staticAssets/images/Turbine/EOL_00.jpg" alt="Placeholder image" class="">
+                      <img src="staticAssets/images/Turbine/EOL_00.jpg" alt="Turbine Carpyz" class="">
                     </figure>
                   </div>
                   <div class="card-content">
@@ -311,7 +311,7 @@
                       <div class="column">
                         <figure class="image is-square">
                           <img id="imgTurbine" src="staticAssets/images/Turbine/EOL_00.jpg" alt="Placeholder image" class="fade-in">
-                          <figcaption>Roue THRE</figcaption>
+                          <figcaption>Turbine</figcaption>
                         </figure>
                       </div>
 
@@ -462,7 +462,6 @@
       <section id="aPropos" class="section has-background-white">
         <div class="columns is-mobile is-centered">
           <div class="column is-four-fifths-widescreen is-four-fifths-fullhd is-four-fifths-desktop is-four-fifths-tablet">
-
             <h2 class="title is-2 has-text-black has-text-centered"><span class="has-text-danger">À</span><span> PROPOS</span></h2>
             <hr>
             <div class="columns">
@@ -574,9 +573,6 @@
       </footer>
 
     </div>
-
-
-
 
     <!-- JS custom -->
     <script type="text/javascript" src="staticAssets/js/main.js"></script>
