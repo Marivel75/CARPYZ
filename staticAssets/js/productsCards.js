@@ -1,26 +1,22 @@
 // open and close modals
-
   function openModal(cId) {
-    let card = document.getElementById(cId);
     let scrollBackBtn = document.getElementById("scrollBackBtn");
-    card.addEventListener('click', function() {
-      let mId = "modal" + cId;
-      let modal = document.getElementById(mId);
-      let html = document.getElementsByTagName("html");
-      modal.classList.add("is-active");
-      html[0].classList.add("is-clipped");
-      scrollBackBtn.style.display = "none";
-    });
+    let mId = "modal" + cId;
+    let modal = document.getElementById(mId);
+    let html = document.getElementsByTagName("html");
+    modal.classList.add("is-active");
+    html[0].classList.add("is-clipped");
+    scrollBackBtn.classList.add("is-hidden");
   }
 
   function closeModal(e) {
+    let scrollBackBtn = document.getElementById("scrollBackBtn");
     let btnClose = document.getElementById("btnCloseModal");
     let modal = document.getElementById(e);
     let html = document.getElementsByTagName("html");
-    let scrollBackBtn = document.getElementById("scrollBackBtn");
-    btnClose.addEventListener('click', modal.classList.remove('is-active'));
+    modal.classList.remove('is-active');
     html[0].classList.remove("is-clipped");
-    scrollBackBtn.style.display = "block";
+    scrollBackBtn.classList.remove("is-hidden");
   }
 
 
