@@ -579,7 +579,31 @@
         </div>
 
         <br><br>
-        <p class="has-text-white is-size-7 is-pulled-right">© Website by Roc Avel Développement, 2020</p>
+        <div class="container">
+          <p class="has-text-white is-size-7">© Website by Roc Avel Développement, 2020</p>
+
+          <p class="has-text-white is-size-7" style="cursor: pointer;" onclick="openModal('attributions');">Attributions photos</p>
+
+          <div id ="modalattributions" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Attributions photos</p>
+                <button class="delete" aria-label="close" onclick="closeModal('modalattributions');"></button>
+              </header>
+              <section class="modal-card-body">
+                <p><span>Photo by <a href="https://unsplash.com/@ok_design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Owen Kemp</a> on <a href="https://unsplash.com/@ok_design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+                <p><span>Photo by <a href="https://unsplash.com/@cristianpalmer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristian Palmer</a> on <a href="https://unsplash.com/@cristianpalmer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+                <p><span>Photo by <a href="https://unsplash.com/@danesduet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel Olah</a> on <a href="https://unsplash.com/@danesduet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+                <p>Photo de fauxels provenant de Pexels</p>
+              </section>
+              <footer class="modal-card-foot">
+              </footer>
+            </div>
+
+          </div>
+        </div>
+
       </footer>
 
     </div>
