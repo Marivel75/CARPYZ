@@ -1,5 +1,5 @@
 // Load logo zoom effect
-  // window.addEventListener("load", zoomLogo);
+  window.addEventListener("load", zoomLogo);
 
   function zoomLogo() {
     let logo = document.getElementById('logoCarpyz');
@@ -200,3 +200,24 @@ function showPage() {
       imgTurbine.src = "staticAssets/images/Turbine/EOL_04.jpg"
     };
   };
+
+
+  // Modal THRE, swap pics on mouseover and mouseout
+  function swapPicTHREAfter() {
+    let picTHRECard = document.getElementById('picTHRECard');
+    picTHRECard.src = "staticAssets/images/THRE/THRE_014.jpg";
+  }
+  function swapPicTHREBefore() {
+    let picTHRECard = document.getElementById('picTHRECard');
+    picTHRECard.src = "staticAssets/images/THRE/THRE_013.jpg";
+  }
+
+  // Modal Turbine, swap pics on mouseover and mouseout
+  function swapPicEOLAfter() {
+    let picEOLCard = document.getElementById('picEOLCard');
+    picEOLCard.src = "staticAssets/images/Turbine/EOL_01.jpg";
+  }
+  function swapPicEOLBefore() {
+    let picEOLCard = document.getElementById('picEOLCard');
+    picEOLCard.src = "staticAssets/images/Turbine/EOL_05.jpg";
+  }

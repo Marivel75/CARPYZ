@@ -33,7 +33,7 @@
 
     <div id="loader"></div>
 
-    <div id="carpyzContent" style="display: none;" class="animate-bottom">
+    <div id="carpyzContent" style="display: none;" class="">
       <button onclick="topFunction();" onmouseover="noOpacity();" onmouseout="oppacity();" id="scrollBackBtn" title="Go to top">
         <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>Top
       </button>
@@ -144,7 +144,7 @@
                 <div id="RoueTHRE" class="card is-shadowless focus" onclick="openModal(id);" onmouseover="shadow(id);" onmouseout="noShadow(id);">
                   <div class="card-image">
                     <figure class="image is-square">
-                      <img src="staticAssets/images/THRE/THRE_06_ter.jpg" alt="Placeholder image" class="">
+                      <img id='picTHRECard' src="staticAssets/images/THRE/THRE_013.jpg" alt="Placeholder image" class="" onmouseover="swapPicTHREAfter()" onmouseout="swapPicTHREBefore()">
                     </figure>
                   </div>
                   <div class="card-content">
@@ -278,7 +278,7 @@
                 <div id="Turbine" class="card is-shadowless focus" onclick="openModal(id);" onmouseover="shadow(id);" onmouseout="noShadow(id);">
                   <div class="card-image">
                     <figure class="image is-square">
-                      <img src="staticAssets/images/Turbine/EOL_00.jpg" alt="Turbine Carpyz" class="">
+                      <img id="picEOLCard" src="staticAssets/images/Turbine/EOL_05.jpg" alt="Turbine Carpyz" class="" onmouseover="swapPicEOLAfter()" onmouseout="swapPicEOLBefore()">
                     </figure>
                   </div>
                   <div class="card-content">
