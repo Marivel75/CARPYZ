@@ -18,6 +18,10 @@ p {
   color: black;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .carpyzBackground {
   background: linear-gradient(to right, #506b2a,#81a93d);
 }
@@ -45,6 +49,13 @@ p {
 }
 
 #produits {
+  background: url('../images/daniel-olah-CEYLvXttPkA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.productsBackground {
   background: url('../images/daniel-olah-CEYLvXttPkA-unsplash.jpg');
   background-size: cover;
   background-position: center;
