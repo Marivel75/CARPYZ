@@ -30,10 +30,15 @@
   </head>
 
   <body>
+
+    <button onclick="topFunction();" onmouseover="noOpacity();" onmouseout="oppacity();" id="scrollBackBtn" title="Go to top">
+      <span class="icon"><i class="fas fa-chevron-circle-up"></i></span>Top
+    </button>
+
     <nav class="navbar is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
-          <a href="#accueil" class="navbar-item">
+          <a href="index.html" class="navbar-item">
             <img src="staticAssets/images/carpyz_symbole-2.png" alt="Logo" class="">
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -87,80 +92,26 @@
                 <div class="columns is-mobile is-vcentered">
 
                   <div class="column is-narrow">
-                    <button id="nextTHRE" class="button is-text is-pulled-left" type="button" name="button" style="z-index: 1;" onclick="swapPic(-1)">
+                    <button id="nextTHRE" class="button is-text" type="button" name="button" style="z-index: 1;" onclick="swapPic(-1)">
                       <i class="fas fa-chevron-left fa-3x"></i>
                     </button>
                   </div>
                   <div class="column">
                       <div class="picTHR">
                         <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_00.jpg">
+                          <img src="staticAssets/images/THRE/THRE_013.jpg">
                         </figure>
                       </div>
 
                       <div class="picTHR">
                         <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_01.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_02.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_03.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_05.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_06.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_07.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_08.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_09.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_010.jpg">
-                        </figure>
-                      </div>
-
-                      <div class="picTHR">
-                        <figure class="image is-square">
-                          <img src="staticAssets/images/THRE/THRE_06_ter.jpg">
+                          <img src="staticAssets/images/THRE/THRE_014.jpg">
                         </figure>
                       </div>
                   </div>
 
                   <div class="column is-narrow">
-                    <button id="nextTHRE" class="button is-text is-pulled-right" type="button" name="button" onclick="swapPic(1)">
+                    <button id="nextTHRE" class="button is-text" type="button" name="button" onclick="swapPic(1)">
                       <span class="icon"><i class="fas fa-chevron-right fa-3x"></i></span>
                     </button>
 
@@ -170,68 +121,22 @@
               </div>
 
             </div>
-          </div>
 
-          <div class="site-wrap is-hidden-mobile">
-            <div class="columns">
-              <div class="column">
+            <div class="columns is-mobile is-centered is-hidden-mobile">
+              <div class="column is-one-fifth">
                 <figure class="image is-square cursor" onclick="currentPic(0);">
-                  <img src="staticAssets/images/THRE/THRE_00.jpg">
+                  <img src="staticAssets/images/THRE/THRE_013.jpg">
                 </figure>
               </div>
-              <div class="column">
+              <div class="column is-one-fifth">
                 <figure class="image is-square cursor" onclick="currentPic(1);">
-                  <img src="staticAssets/images/THRE/THRE_01.jpg">
+                  <img src="staticAssets/images/THRE/THRE_014.jpg">
                 </figure>
               </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(2);">
-                  <img src="staticAssets/images/THRE/THRE_02.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(3);">
-                  <img src="staticAssets/images/THRE/THRE_03.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(4);">
-                  <img src="staticAssets/images/THRE/THRE_05.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(5);">
-                  <img src="staticAssets/images/THRE/THRE_06.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(6);">
-                  <img src="staticAssets/images/THRE/THRE_07.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(7);">
-                  <img src="staticAssets/images/THRE/THRE_08.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(8);">
-                  <img src="staticAssets/images/THRE/THRE_09.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(9);">
-                  <img src="staticAssets/images/THRE/THRE_010.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <figure class="image is-square cursor" onclick="currentPic(10);">
-                  <img src="staticAssets/images/THRE/THRE_06_ter.jpg">
-                </figure>
-              </div>
-
             </div>
           </div>
+
+          <br>
 
           <br>
           <div class="site-wrap">
@@ -249,6 +154,57 @@
 
     </section>
 
+    <div id="contact" class="container is-fluid divTransition">
+    </div>
+
+    <footer id="contact" class="footer dark-background">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-half-widescreen is-half-fullhd is-half-desktop is-three-quarters-mobile">
+          <div class="content has-text-centered">
+            <h2 class="title is-2 has-text-black has-text-centered"><span class="has-text-danger">C</span><span class="has-text-white">ONTACT</span></h2>
+            <p class="has-text-white has-text-centered">Nous sommes sans cesse à la recherche de nouvelles collaborations et de nouveaux partenaires. Vous avez un potentiel industriel et financier qui vous permet d'envisager le développement de recherches poussées, la construction et la diffusion de ces produits. N'hésitez pas à prendre contact avec nous.</p>
+            <br>
+            <p class="is-size-3 has-text-weight-bold has-text-white">Carpyz</p>
+            <address class="">
+              <p class="is-size-6 has-text-weight-bold has-text-white">71, rue Desnouettes</p>
+              <p class="is-size-6 has-text-weight-bold has-text-white">75015 Paris</p>
+              <p class="is-size-6 has-text-weight-bold has-text-white">France</p>
+              <p class="is-size-6 has-text-weight-bold has-text-white">Tél : +33 6 68 95 03 00</p>
+              <p class="has-text-centered"><a href="mailto:pc.carpyz@yahoo.fr" target="_blank" class="is-size-4 textCarpyzBackground has-text-weight-bold">pc.carpyz@yahoo.fr</a></p>
+            </address>
+          </div>
+
+        </div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <p class="has-text-white is-size-7">© Website by Roc Avel Développement, 2020</p>
+
+        <p class="has-text-white is-size-7" style="cursor: pointer;" onclick="openModal('attributions');">Attributions photos</p>
+
+        <div id ="modalattributions" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">Attributions photos</p>
+              <button class="delete" aria-label="close" onclick="closeModal('modalattributions');"></button>
+            </header>
+            <section class="modal-card-body">
+              <p><span>Photo by <a href="https://unsplash.com/@ok_design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Owen Kemp</a> on <a href="https://unsplash.com/@ok_design?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+              <p><span>Photo by <a href="https://unsplash.com/@cristianpalmer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cristian Palmer</a> on <a href="https://unsplash.com/@cristianpalmer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+              <p><span>Photo by <a href="https://unsplash.com/@danesduet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel Olah</a> on <a href="https://unsplash.com/@danesduet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+              <p>Photo de fauxels provenant de Pexels</p>
+            </section>
+            <footer class="modal-card-foot">
+            </footer>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+    <script type="text/javascript" src="staticAssets/js/main.js"></script>
     <script type="text/javascript" src="staticAssets/js/thr.js"></script>
 
   </body>
