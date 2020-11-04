@@ -215,7 +215,7 @@ function showPage() {
   // Modal Turbine, swap pics on mouseover and mouseout
   function swapPicEOLAfter() {
     let picEOLCard = document.getElementById('picEOLCard');
-    picEOLCard.src = "staticAssets/images/Turbine/EOL_01.jpg";
+    picEOLCard.src = "staticAssets/images/Turbine/EOL_04.jpg";
   }
   function swapPicEOLBefore() {
     let picEOLCard = document.getElementById('picEOLCard');

@@ -25,12 +25,12 @@ function currentPic(n) {
 }
 
 function pics(n) {
-  let picsTHR = document.getElementsByClassName('picTHR');
-  if (n > picsTHR.length - 1) picIndex = 0;
-  if (n < 0) picIndex = picsTHR.length - 1;
-  for (let pic of picsTHR) {
+  let picsTurbine = document.getElementsByClassName('picTurbine');
+  if (n > picsTurbine.length - 1) picIndex = 0;
+  if (n < 0) picIndex = picsTurbine.length - 1;
+  for (let pic of picsTurbine) {
     pic.style.display = 'none';
   }
   console.log(picIndex);
-  picsTHR[picIndex].style.display = 'block'
+  picsTurbine[picIndex].style.display = 'block'
 };
