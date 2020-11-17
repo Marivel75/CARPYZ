@@ -178,7 +178,39 @@ input::placeholder {
   background-size: 75%;
 }
 
-#scrollBtn {
+#wheel-5 {
+  background: url('../../StaticAssets/images/THRE/TH2R_visuels/TH2R_07.jpg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+#turbine-0 {
+  background: url('../../StaticAssets/images/Turbine/Turbine_01.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#turbine-1 {
+  background: url('../../StaticAssets/images/Turbine/Turbine_02.jpg');
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+#turbine-2 {
+  background: url('../../StaticAssets/images/Turbine/Turbine_03.jpg');
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+.scrollBtn {
   height: 75px;
   width: 75px;
   display: block;
