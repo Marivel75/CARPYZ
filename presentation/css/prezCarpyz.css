@@ -225,3 +225,20 @@ input::placeholder {
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
   opacity: .7;
 }
+
+#scrollBackBtn {
+  display: none;
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 50%);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
