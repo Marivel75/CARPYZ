@@ -205,19 +205,19 @@ function showPage() {
   // Modal THRE, swap pics on mouseover and mouseout
   function swapPicTHREAfter() {
     let picTHRECard = document.getElementById('picTHRECard');
-    picTHRECard.src = "staticAssets/images/THRE/THRE_014.jpg";
+    picTHRECard.src = "staticAssets/images/THRE/TH2R_visuels/TH2R_06.jpg";
   }
   function swapPicTHREBefore() {
     let picTHRECard = document.getElementById('picTHRECard');
-    picTHRECard.src = "staticAssets/images/THRE/THRE_013.jpg";
+    picTHRECard.src = "staticAssets/images/THRE/TH2R_visuels/TH2R_01.jpg";
   }
 
   // Modal Turbine, swap pics on mouseover and mouseout
   function swapPicEOLAfter() {
     let picEOLCard = document.getElementById('picEOLCard');
-    picEOLCard.src = "staticAssets/images/Turbine/EOL_04.jpg";
+    picEOLCard.src = "staticAssets/images/Turbine/TURBINE_01.jpg";
   }
   function swapPicEOLBefore() {
     let picEOLCard = document.getElementById('picEOLCard');
-    picEOLCard.src = "staticAssets/images/Turbine/EOL_05.jpg";
+    picEOLCard.src = "staticAssets/images/Turbine/TURBINE_00.jpg";
   }
